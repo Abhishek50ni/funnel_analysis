@@ -71,24 +71,15 @@ The company observed **high website traffic, low conversion rate, and high cart 
 ```
 Ecommerce-Product-Analytics/
 │
-├── data/                          # Raw + cleaned data (gitignored — see Setup)
-│   ├── events.csv
-│   ├── item_properties_part1.csv
-│   ├── item_properties_part2.csv
-│   ├── category_tree.csv
-│   ├── clean_events.csv
-│   └── item_category_mapping.csv
 │
 ├── sql/
 │   └── schema.sql                 # PostgreSQL star-schema (visitors, items, categories, sessions, events)
 │
 ├── scripts/
 │   ├── phase4_cleaning_pipeline.py    # Full preprocessing pipeline (dedup, bot filtering, sessionization)
-│   └── fix_category_mapping.py        # Rebuilds itemid → categoryid mapping
 │
 ├── app/
 │   ├── streamlit_app.py           # 6-page interactive dashboard
-│   └── requirements.txt
 │
 ├── screenshots/                   # Dashboard screenshots used in this README
 │
@@ -96,7 +87,6 @@ Ecommerce-Product-Analytics/
 │   └── Product_Analytics_Report.pdf   # Full write-up (Executive Summary → Recommendations)
 │
 ├── requirements.txt
-├── .gitignore
 └── README.md
 ```
 
